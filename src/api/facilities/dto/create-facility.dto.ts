@@ -39,6 +39,11 @@ export class CreateFacilityDto {
   @IsUrl({}, { message: 'avatar phải là URL hợp lệ' })
   avatar?: string;
 
+  @ApiProperty({ example: '65f123abc...', description: 'ID của user' })
+  @IsString()
+  @IsNotEmpty()
+  userId?: string;
+
   @ApiPropertyOptional({
     enum: FacilityStatus,
     example: FacilityStatus.OPEN,

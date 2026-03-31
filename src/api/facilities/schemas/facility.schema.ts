@@ -39,6 +39,10 @@ export class Facility {
   @Prop({ enum: FacilityStatus, default: FacilityStatus.OPEN })
   status: FacilityStatus;
 
+  @ApiProperty({ example: '65f123abc...', description: 'id user' })
+  @Prop({ required: true })
+  userId: string;
+
   @ApiProperty({ example: '07:00', description: 'Giờ mở cửa (HH:mm)' })
   @Prop({ required: true })
   openTime: string;
@@ -47,7 +51,10 @@ export class Facility {
   @Prop({ required: true })
   closeTime: string;
 
-  @ApiProperty({ example: '123 Nguyễn Văn A, Q.1, TP.HCM', description: 'Địa chỉ' })
+  @ApiProperty({
+    example: '123 Nguyễn Văn A, Q.1, TP.HCM',
+    description: 'Địa chỉ',
+  })
   @Prop({ required: true })
   address: string;
 

@@ -55,9 +55,10 @@ export class FacilitiesController {
   @ApiBody({
     schema: {
       type: 'object',
-      required: ['name', 'openTime', 'closeTime', 'address'],
+      required: ['name', 'userId', 'openTime', 'closeTime', 'address'],
       properties: {
         name: { type: 'string', example: 'Hồ bơi Olympic' },
+        userId: { type: 'string', example: '65f123abc...' },
         openTime: { type: 'string', example: '07:00' },
         closeTime: { type: 'string', example: '22:00' },
         address: { type: 'string', example: '123 Nguyễn Văn Linh' },

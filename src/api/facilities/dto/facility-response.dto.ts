@@ -2,13 +2,14 @@
 
 export class FacilityItemDto {
   id?: string;
-  name?: string;
-  image?: string;
-  avatar?: string;
-  status?: string;
-  openTime?: string;
-  closeTime?: string;
-  address?: string;
+  name: string;
+  image: string;
+  userId: string;
+  avatar: string;
+  status: string;
+  openTime: string;
+  closeTime: string;
+  address: string;
 }
 
 export class FacilityListResponseDto {
