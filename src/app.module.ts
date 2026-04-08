@@ -16,7 +16,7 @@ import { HeaderBannersModule } from './api/headerBanners/header-banner.module';
     // AuthModule,
     MongooseModule.forRoot('mongodb://localhost:27017/pro-sport-db'),
     CloudinaryModule,
-    // CategoriesModule,
+    CategoriesModule,
     HeaderBannersModule
   ],
   controllers: [AppController],
